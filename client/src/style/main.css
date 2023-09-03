@@ -1,0 +1,229 @@
+.mainPage-bottom{
+    margin-bottom: 50px;
+}
+.Home-topView{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+ 
+}
+
+.Home-topView-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+    width: 60%;
+    padding-right: 50px;
+}
+.Home-topView-left img{
+}
+.Home-topView-left-bottom img{
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+
+   
+}
+
+.Home-topView-left-top img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-left:-300px;
+    border-radius: 30px;
+    box-shadow: #8f4f07 0px 50px 100px -20px, #502d05 0px 30px 60px -30px;
+    transition: 0.3s;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+.Home-topView-slogan{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+color: #502d05;
+transition: 0.3s;
+}
+.Home-topView-slogan-underImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.Home-topView-slogan-underImage div{
+    padding-left: 15px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+.Home-about{
+    margin: 30px 10% 0 10%;
+    font-family: 'Roboto', sans-serif;
+}
+.Home-about h1{
+font-size: 30px;
+text-align: center;
+color: #502d05;
+}
+.Home-about div{
+    font-size: 19px;
+   line-height: 1.4;
+}
+.Home-about ul li{
+    padding-bottom: 25px;
+}
+.Home-services{
+    margin: 30px 10% 0 10%;
+}
+.Home-services h1{
+    font-size: 30px;
+    text-align: center;
+    color: #502d05;
+    margin-bottom: 50px;
+}
+.Home-services-allbox{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 100px;
+width: 100%;
+}
+.Home-services-allbox img{
+width: 300px;
+object-fit: cover;
+height: 250px;
+border-radius: 50px;
+}
+.Home-services-each{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 50px;
+}
+.Home-services-each-left{
+    min-height: 200px;
+    background: linear-gradient(45deg, #744005 10%, #daa411 90%);
+   padding: 10px 15px 25px 15px;
+   max-width: 400px;
+   color: white;
+   border-radius: 20px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.Home-services-each-left h3{
+    text-align: center;
+}
+
+.home-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.home-contact h1{
+    font-size: 30px;
+    text-align: center;
+    color: #502d05;
+    margin-bottom: 50px;
+}
+.home-contact-info {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 40%;
+}
+.home-contact-info div{
+    font-size: 20px;
+}
+
+.home-contact-info div a{
+ color: inherit;
+
+}
+.home-contact-emailSend form{
+    margin-top: 60px;
+    width: 100%;
+}
+.home-contact-name_email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.home-contact-name_email input{
+    width: 300px;
+    margin-left: 10px;
+}
+@media(max-width:800px){
+    .home-contact-name_email input{
+
+        width: 150px;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+@media(max-width:1200px){
+    .Home-topView-left{}
+    .Home-topView-slogan{
+        font-size: 40px;
+    }
+   
+    .Home-topView-left-top img{
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        margin-left:-300px;
+        border-radius: 30px;
+        box-shadow: #8f4f07 0px 50px 100px -20px, #502d05 0px 30px 60px -30px;
+    }
+}
+
+
+@media(max-width:1000px){
+    .Home-topView-slogan{
+        font-size: 30px;
+        margin: 0 10% 0 10%;
+     }
+     
+    .Home-topView{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .Home-topView-left-bottom img{
+        width: 600px;
+        height: 400px;
+       
+    }
+    .Home-topView-left-top img{
+        width: 200px;
+        height: 300px;
+       
+    }
+}
+@media(max-width:800px){
+ 
+    .Home-topView-left-bottom img{
+        width:100%;
+        object-fit: contain;
+       
+    }
+    .Home-topView-left-top img{
+        width: 200px;
+        height: 300px;
+       
+
+    }
+}

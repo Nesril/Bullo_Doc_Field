@@ -1,0 +1,152 @@
+.main-header{
+   
+    display: flex;
+    padding: 10px 3% 10px 3%;
+    transition: 0.3s;
+    justify-content: space-between;
+    z-index: 2
+}
+.main-header a{
+    text-decoration: none;
+    color: inherit
+}
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+.main-header-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Black Ops One', cursive;
+    font-size: 25px
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.main-header-right{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.main-header-right div{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.main-header-right div:hover{
+   color: rgb(187, 163, 163);
+}
+
+
+.main-header-scrolled{
+    position: fixed;
+    top:0;
+    transition: 0.3s;
+    left: 0;
+    background-color: #c57821;
+    background-image: linear-gradient(45deg, #8f4f07 0%, #be8f0f 100%);
+    width: 100%;
+    color: white;
+}
+.main-header-scrolled .main-header-right{
+    margin-right: 10%;
+}
+
+.short-main-header-right{
+    font-size: 40px;
+}
+.short-main-header{
+    width: 10%;
+}
+.short-main-header-right-list-closed{
+    position: fixed;
+    right: 0;
+    top: 0px;
+    width:0px;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #8f4f07 0%, #be8f0f 100%);
+    z-index: 5;
+    transition: 0.3s;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
+}
+.short-main-header-right-list-open{
+    width:200px;
+}
+.short-main-header-right-list{
+    margin-top: 50px;
+    display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;
+
+}
+.short-main-header-right-list a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.short-main-header-right-list div{
+    color: aliceblue;
+    cursor: pointer;
+    padding: 10px;
+    width: 80%;  
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.short-main-header-right-list div:hover{
+    background-color: rgb(129, 65, 22);
+    transform: scale(1.05);
+}
+
+
+.main-header-okPage{
+    position: fixed;
+    top: 200px;
+    left: 20%;
+    width: 50%;
+    min-height: 100px;
+    background: linear-gradient(35deg, #8f4f07 0%, #be8f0f 100%);
+    z-index: 5;
+    color: white;
+    border-radius: 30px;
+    padding:30px;
+    box-shadow: #8f4f07 0px 1px 1px 0px inset, #be8f0f 0px 50px 100px -20px, #be8f0f 0px 30px 60px -30px;
+}
+.main-header-okPage-button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+.main-header-okPage-button button{
+    padding: 15px;
+    border: 30px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.main-header-okPage-button-yes{
+    color: white;
+    transition: 0.3s;
+}
+
+.main-header-okPage-button-yes:hover{
+   background-color: #58e2d61e;
+}
+.main-header-okPage-button-no{
+    color: rgb(31, 14, 14);
+    transition: 0.3s;
+}
+.main-header-okPage-button-no:hover{
+    background-color: #df28281e;
+ }
+
+@media(max-width:400px){
+    .main-header-left-name{
+        display: none;
+    }
+    .short-main-header-right-list-open{
+        width: 100%;
+    }
+}

@@ -1,0 +1,514 @@
+.Dashboard{
+    background: linear-gradient(45deg, #8f4f07 0%, #be8f0f 90%,#8f4f07 10%);
+     width: 100%;
+     color: white;
+     background-size: 400% 400%;
+     height: 108vh;
+     overflow: hidden;
+     animation: gradient 3s ease infinite alternate;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+  }
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+.dashboard-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3% 3px 3%;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+.dashboard-header a{
+    color: black;
+    text-decoration: none;
+}
+.dashboard-header-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.dashboard-header-links a{
+    transition: 0.3s;
+}
+.dashboard-header-links div{
+    transition: 0.3s;
+}
+
+.dashboard-header-links a:hover{
+    color:  rgb(170, 182, 185);
+   }
+
+   
+.dashboard-header-links div:hover{
+    transform: scale(1.05);
+   }
+
+.dashboard-header-profile img:hover{
+    transform: scale(1.05);
+}
+.dash-active-profile img{
+    box-shadow: 2px 2px #5a3504;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+.dash-active-link{
+    color: rgb(224, 217, 217) ;
+  border-bottom: 2px solid  #5a3504;
+}
+
+/*linear-gradient(35deg, #a7763f8f 0%, #968452a2 100%);*/
+.Dashboard-routes{
+    background: white;
+    height: 93vh;
+     width: 95%;
+     position: relative;
+     left: 1.5%;
+     padding: 15px;
+     padding-bottom: 10px;
+     padding-top: 10px;
+     border-radius: 20px;
+     overflow-y: auto;
+     overflow-x: hidden;
+ 
+}
+
+
+/* width */
+.Dashboard-routes::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  .Dashboard-routes::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px 8f5e03ef; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .Dashboard-routes::-webkit-scrollbar-thumb {
+    background: #8f5e03ef; 
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  /* Handle on hover */
+  .Dashboard-routes::-webkit-scrollbar-thumb:hover {
+    background: #694606ef; 
+  }
+  .dashboard-dashIntro{
+    line-height: 1.5;
+  }
+  .dashboard-dashIntro h1{
+    text-align: center;
+  }
+
+
+  .dashboard-doc_sim h1{
+    text-align: center;
+  }
+  .dashboard-doc_sim button{
+    color: rgb(99, 8, 8);
+    text-align: center;
+  }
+  .dashboard-doc_sim-overview{
+     width: 100%;
+     padding: 0 0 0 10%;
+     width: 70%;
+     color: black;
+     line-height: 1.4;
+  }
+  .dashboard-doc_sim-overview ol li{
+     padding-bottom: 10px;
+     line-height: 1.6;
+  }
+  .dashboard-doc_sim-folders{
+    margin-top: -10px;
+  }
+  .dashboard-doc_sim-folders-all{
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+  }
+  .dashboard-doc_sim-eachFolder button{
+    background-color: #8f4f07;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    text-transform: inherit;
+  }
+  .dashboard-doc_sim-folders-get-shared{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+  .dashboard-doc_sim-sharedFolder button{
+    background-color: #ffbd71;
+
+  }
+  .dash-doc-sim-active-folder button{
+    color: white;
+    background: rgb(109, 84, 4);
+     transform:scale(1.2);
+  }
+  .dashboard-doc_sim-folders-create{
+    margin-top: -5px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .dashboard-doc_sim-folders-create button{
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #8f4f07;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    color: white ;
+  }
+  .dashboard-folders-each{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dashboard-folders-each-folders{
+    width: 60%;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+  .dashboard-folders-each-folders h1{
+    font-family: 'ADLaM Display', cursive;
+    font-weight: 200;
+    color: #3f2404;
+  }
+  .dashboard-folders-each-folders-input{
+    margin-bottom: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .dashboard-folders-each-folders-input input{
+    background: white;
+    outline: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(105, 47, 7);
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  .dashboard-folders-each-folders-input input:focus{
+    border: 2px solid rgb(255, 252, 252);
+    background: transparent;
+  }
+.dashboard-folders-each-folders-sharedBy{
+  font-family: 'ADLaM Display', cursive;
+  padding-left: 15px;
+  color: black;
+  font-size: 14px;
+}
+.dashboard-files-styled-table{
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  background-color: #3f2404;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* width */
+.dashboard-files-styled-table::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.dashboard-files-styled-table::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px 8f5e03ef; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.dashboard-files-styled-table::-webkit-scrollbar-thumb {
+  background: #6d4616; 
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Handle on hover */
+.dashboard-files-styled-table::-webkit-scrollbar-thumb:hover {
+  background: #694606ef; 
+}
+
+
+  .dashboard-files-styled-table table{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.dashboard-files-styled-table thead tr {
+  background-color: #704104;
+  color: #ffffff;
+  text-align: left;
+}
+.dashboard-files-styled-table th,
+.dashboard-files-styled-table td {
+    padding: 14px 22px;
+      border-collapse: collapse;
+}
+
+.dashboard-files-styled-table tbody tr {
+  border-bottom: 1px solid #b1a0a0;
+}
+
+.dashboard-files-styled-table tbody tr:nth-of-type(even) {
+  background-color: #704900dc;
+}
+
+.dashboard-files-styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #704104;
+}
+
+.dashboard-files-styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #704104;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+.dashboard-folders-each-folders-NoFiles{
+  display: flex;justify-content: center;align-items: center;flex-direction: column;gap: 20px;
+  height: 100%;
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  color: black;
+}
+.dashboard-folders-each-folders-addNewFile form{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.dashboard-folders-each-folders-addNewFile button{
+  padding: 5px;
+  cursor: pointer;
+  background-color: #08635e;
+  border: none;
+  color: white;
+
+}
+.dashboard-folders-each-folders-addNewFile input{
+  opacity: none;
+  display: none;
+}
+.dashboard-folders-each-folders-addNewFile-icon{
+color: black;
+}
+.dashboard-folders-each-folders-delete{
+  margin-top: -120px;
+  background-color: #5a3504;
+  position: fixed;
+  left: 20%;
+  z-index: 4;
+  width: 40%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: #553108 0px 1px 1px 0px inset, #836616 0px 50px 100px -20px, #86660d 0px 30px 60px -30px;
+}
+.dashboard-folders-each-folders-delete-Input input{
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.dashboard-folders-each-folders-delete-button{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+}
+.dashboard-folders-each-folders-delete-button button{
+font-size: 13px;
+}
+
+.dashboard-folders-each-folders-delete-button-drop button{
+   background-color: #04425a;
+   color: white;
+}
+
+.dashboard-folders-each-folders-delete-button-cancel button{
+  background-color: #a7520d;
+  color: white;
+}
+
+.dashboard-folders-each-folders-share{
+  background-color: #553108;
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.dashboard-folders-each-folders-share button{
+  color: green;
+}
+
+.dashboard-folders-each-folders-deleteFile{
+  margin-top: -120px;
+  background-color: #5a3504;
+  position: fixed;
+  left: 20%;
+  z-index: 4;
+  width: 40%;
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 1.6;
+  box-shadow: #553108 0px 1px 1px 0px inset, #836616 0px 50px 100px -20px, #86660d 0px 30px 60px -30px;
+}
+.dashboard-folders-each-folders-deleteFile-buttons{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.dashboard-folders-each-check{
+margin-top: 40px;
+width: 30%;
+}
+.dashboard-folders-each-check-field input{
+  display: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+.dashboard-folders-each-check-field{
+  background-color: #3f2404;
+  width:80%;
+  min-width: 200px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  font-family: 'Black Ops One', cursive;
+  font-weight: 400;
+  padding: 10px;
+  letter-spacing: 2px;
+  cursor: pointer;
+ line-break: anywhere;
+}
+.dashboard-folders-each-check-field-button button{
+border-radius: 30%;
+color: #04425a;
+}
+
+.dashboard-doc_summary{
+  margin: 0 3% 0 3%;
+  color: black;
+}
+
+.dashboard-doc_summary h1{
+text-align: center;
+}
+.dashboard-doc_summary-instruction{
+  margin-bottom: 30px;
+
+}
+.dashboard-doc_summary-type {
+  display: flex;
+  justify-content: flex-start; /* Change the value to 'flex-start' */
+  align-items: center;
+  margin-bottom: 10px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dashboard-doc_summary-type div {
+  width: fit-content;
+  min-width: 200px;
+  margin-left: auto /* Add 'text-align: left' to align the content to the left */
+}
+.dashboard-doc_summary_ways{
+
+}
+.dashboard-doc_summary_ways-upload_file input{
+  display: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+.dashboard-doc_summary_ways-upload_file{
+  background-color: #995707;
+  color: white;
+  border-radius: 100px;
+  width:150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  font-family: 'Black Ops One', cursive;
+  padding: 10px;
+  letter-spacing: 2px;
+ line-break: anywhere;
+ font-size: 12px;
+ margin: 50px 0 30px 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+.dashboard-doc_summary_ways textarea{
+  width: 80%;
+  min-width: 200px;
+  height: 200px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  border: 1px solid #995707;
+  padding: 8px;
+  transition: 0.3s;
+}
+.dashboard-doc_summary_ways-button{
+  text-align: center;
+  margin: 20px 0 20px 0;
+
+}
+.dashboard-doc_summary_ways-button button{
+  text-transform: inherit;
+  font-size: 20px;
+}
+@media(max-width:2000px){
+  .dashboard-files-styled-table {
+    width: fit-content;
+    max-width: 100%;
+  }
+  .dashboard-folders-each{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .dashboard-folders-each-folders{
+    width: 100%;
+  }
+  .dashboard-folders-each-check{
+    width: 100%;
+  }
+}
+  @media(max-width:700px){
+    .Dashboard-routes{
+        position: relative;
+        left: 0;
+       
+    }
+  }
